@@ -1,0 +1,125 @@
+.intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+    z-index: -1;
+    object-fit: cover;
+    height: 70vh;
+}
+
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName {
+    color: yellow
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.btn {
+    background: white;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.btnImg {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Columns */
+  .column {
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Clearfix for clearing floats */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Responsive Breakpoints */
+  @media (min-width: 992px) {
+    .column-lg-6 {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .column-md-6 {
+      width: 50%;
+    }
+  }
+  
+  /* For small screens, columns take full width */
+  .column-sm-12 {
+    width: 100%;
+  }
+
+@media screen and (max-width:840px) {
+    .bg {
+        right: -10vw;
+    }
+
+    .introContent {
+        font-size: 6vw;
+    }
+
+    .hello {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .bg {
+        right: -32vw;
+        height: 50vh;
+        top: 12rem;
+    }
+}
